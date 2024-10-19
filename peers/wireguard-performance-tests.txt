@@ -1,0 +1,136 @@
+RAW Performance (no encryption):
+vyos@vyos1:~$ iperf3 -c 192.168.122.28 
+Connecting to host 192.168.122.28, port 5201
+[  5] local 192.168.122.45 port 44856 connected to 192.168.122.28 port 5201
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  1.04 GBytes  8.91 Gbits/sec    0    625 KBytes       
+[  5]   1.00-2.00   sec  1.05 GBytes  9.05 Gbits/sec    0    806 KBytes       
+[  5]   2.00-3.00   sec  1.02 GBytes  8.80 Gbits/sec    0    619 KBytes       
+[  5]   3.00-4.00   sec  1.06 GBytes  9.13 Gbits/sec    0    642 KBytes       
+[  5]   4.00-5.00   sec  1.04 GBytes  8.92 Gbits/sec    0    472 KBytes       
+[  5]   5.00-6.00   sec  1.04 GBytes  8.91 Gbits/sec    0    523 KBytes       
+[  5]   6.00-7.00   sec   960 MBytes  8.06 Gbits/sec    0    891 KBytes       
+[  5]   7.00-8.00   sec  1.05 GBytes  9.02 Gbits/sec    0    529 KBytes       
+[  5]   8.00-9.00   sec  1.05 GBytes  9.06 Gbits/sec    0    484 KBytes       
+[  5]   9.00-10.00  sec   970 MBytes  8.13 Gbits/sec    0    735 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec  10.2 GBytes  8.80 Gbits/sec    0             sender
+[  5]   0.00-10.00  sec  10.2 GBytes  8.80 Gbits/sec                  receiver
+
+iperf Done.
+
+vyos@vyos1:~$ iperf3 -c 192.168.122.28  -R
+Connecting to host 192.168.122.28, port 5201
+Reverse mode, remote host 192.168.122.28 is sending
+[  5] local 192.168.122.45 port 48300 connected to 192.168.122.28 port 5201
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.00   sec  1.53 GBytes  13.2 Gbits/sec                  
+[  5]   1.00-2.00   sec  1.32 GBytes  11.4 Gbits/sec                  
+[  5]   2.00-3.00   sec  1.51 GBytes  12.9 Gbits/sec                  
+[  5]   3.00-4.00   sec  1.21 GBytes  10.4 Gbits/sec                  
+[  5]   4.00-5.00   sec  1.52 GBytes  13.0 Gbits/sec                  
+[  5]   5.00-6.00   sec  1.35 GBytes  11.6 Gbits/sec                  
+[  5]   6.00-7.00   sec  1.27 GBytes  10.9 Gbits/sec                  
+[  5]   7.00-8.00   sec  1.61 GBytes  13.9 Gbits/sec                  
+[  5]   8.00-9.00   sec  1004 MBytes  8.43 Gbits/sec                  
+[  5]   9.00-10.00  sec  1.57 GBytes  13.5 Gbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec  13.9 GBytes  11.9 Gbits/sec    0             sender
+[  5]   0.00-10.00  sec  13.9 GBytes  11.9 Gbits/sec                  receiver
+
+iperf Done.
+vyos@vyos1:~$ 
+
+
+Wireguard RHASHTABLES:
+
+vyos@vyos1:~$ iperf3 -c 10.0.1.100
+Connecting to host 10.0.1.100, port 5201
+[  5] local 10.0.1.101 port 38486 connected to 10.0.1.100 port 5201
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  59.2 MBytes   496 Mbits/sec    0    500 KBytes       
+[  5]   1.00-2.00   sec  58.1 MBytes   487 Mbits/sec    0    449 KBytes       
+[  5]   2.00-3.00   sec  59.8 MBytes   502 Mbits/sec    0    454 KBytes       
+[  5]   3.00-4.00   sec  64.0 MBytes   536 Mbits/sec    0    500 KBytes       
+[  5]   4.00-5.00   sec  61.7 MBytes   518 Mbits/sec    0    476 KBytes       
+[  5]   5.00-6.00   sec  62.6 MBytes   525 Mbits/sec    0    537 KBytes       
+[  5]   6.00-7.00   sec  58.1 MBytes   487 Mbits/sec    0    497 KBytes       
+[  5]   7.00-8.00   sec  63.9 MBytes   536 Mbits/sec    0    505 KBytes       
+[  5]   8.00-9.00   sec  62.5 MBytes   524 Mbits/sec    0    481 KBytes       
+[  5]   9.00-10.00  sec  56.7 MBytes   475 Mbits/sec    0    516 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec   606 MBytes   509 Mbits/sec    0             sender
+[  5]   0.00-10.01  sec   604 MBytes   506 Mbits/sec                  receiver
+
+iperf Done.
+vyos@vyos1:~$ iperf3 -c 10.0.1.100 -R
+Connecting to host 10.0.1.100, port 5201
+Reverse mode, remote host 10.0.1.100 is sending
+[  5] local 10.0.1.101 port 36970 connected to 10.0.1.100 port 5201
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.00   sec  54.7 MBytes   459 Mbits/sec                  
+[  5]   1.00-2.00   sec  45.0 MBytes   378 Mbits/sec                  
+[  5]   2.00-3.00   sec  54.4 MBytes   457 Mbits/sec                  
+[  5]   3.00-4.00   sec  49.1 MBytes   411 Mbits/sec                  
+[  5]   4.00-5.00   sec  56.6 MBytes   475 Mbits/sec                  
+[  5]   5.00-6.00   sec  56.9 MBytes   477 Mbits/sec                  
+[  5]   6.00-7.00   sec  54.3 MBytes   456 Mbits/sec                  
+[  5]   7.00-8.00   sec  57.0 MBytes   479 Mbits/sec                  
+[  5]   8.00-9.00   sec  54.6 MBytes   458 Mbits/sec                  
+[  5]   9.00-10.00  sec  53.8 MBytes   452 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec   540 MBytes   453 Mbits/sec   70             sender
+[  5]   0.00-10.00  sec   537 MBytes   450 Mbits/sec                  receiver
+
+iperf Done.
+vyos@vyos1:~$ 
+
+
+Wireguard HASHTABLES (current upstream):
+
+vyos@vyos1:~$ iperf3 -c 10.0.1.100 
+Connecting to host 10.0.1.100, port 5201
+[  5] local 10.0.1.101 port 37938 connected to 10.0.1.100 port 5201
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  55.7 MBytes   467 Mbits/sec    0    484 KBytes       
+[  5]   1.00-2.00   sec  57.3 MBytes   480 Mbits/sec    0    513 KBytes       
+[  5]   2.00-3.00   sec  54.4 MBytes   456 Mbits/sec    0    516 KBytes       
+[  5]   3.00-4.00   sec  56.4 MBytes   473 Mbits/sec    0    481 KBytes       
+[  5]   4.00-5.00   sec  54.3 MBytes   456 Mbits/sec    0    502 KBytes       
+[  5]   5.00-6.00   sec  59.1 MBytes   496 Mbits/sec    0    497 KBytes       
+[  5]   6.00-7.00   sec  59.8 MBytes   502 Mbits/sec    0    553 KBytes       
+[  5]   7.00-8.00   sec  59.8 MBytes   501 Mbits/sec    0    486 KBytes       
+[  5]   8.00-9.00   sec  57.7 MBytes   484 Mbits/sec    0    518 KBytes       
+[  5]   9.00-10.00  sec  56.8 MBytes   476 Mbits/sec    0    598 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec   571 MBytes   479 Mbits/sec    0             sender
+[  5]   0.00-10.01  sec   570 MBytes   477 Mbits/sec                  receiver
+
+iperf Done.
+vyos@vyos1:~$ iperf3 -c 10.0.1.100 -R
+Connecting to host 10.0.1.100, port 5201
+Reverse mode, remote host 10.0.1.100 is sending
+[  5] local 10.0.1.101 port 60056 connected to 10.0.1.100 port 5201
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.00   sec  53.3 MBytes   447 Mbits/sec                  
+[  5]   1.00-2.00   sec  52.2 MBytes   438 Mbits/sec                  
+[  5]   2.00-3.00   sec  52.5 MBytes   441 Mbits/sec                  
+[  5]   3.00-4.00   sec  56.8 MBytes   477 Mbits/sec                  
+[  5]   4.00-5.00   sec  55.1 MBytes   462 Mbits/sec                  
+[  5]   5.00-6.00   sec  50.5 MBytes   424 Mbits/sec                  
+[  5]   6.00-7.00   sec  52.6 MBytes   442 Mbits/sec                  
+[  5]   7.00-8.00   sec  44.0 MBytes   369 Mbits/sec                  
+[  5]   8.00-9.00   sec  53.6 MBytes   450 Mbits/sec                  
+[  5]   9.00-10.00  sec  52.9 MBytes   444 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec   527 MBytes   442 Mbits/sec  118             sender
+[  5]   0.00-10.00  sec   524 MBytes   439 Mbits/sec                  receiver
+
+iperf Done.
+vyos@vyos1:~$ 

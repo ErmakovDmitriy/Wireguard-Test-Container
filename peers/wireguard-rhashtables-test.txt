@@ -1,0 +1,75 @@
+[Sat Oct 12 17:35:43 2024] wireguard_test_rhashtable: Step: pre-seed with 1000 peers, manipulate with 100 peers, 10000 iterations
+[Sat Oct 12 17:35:43 2024] wireguard_test_rhashtable: Starting insert/delete
+[Sat Oct 12 17:35:44 2024] wireguard_test_rhashtable: Insert/delete done, jiffies total = 545, duration msec = 545, ktime_diff = 546834191
+[Sat Oct 12 17:35:45 2024] wireguard_test_rhashtable: Replacements done, jiffies total = 152, duration msec = 152, ktime total = 162357872
+[Sat Oct 12 17:35:45 2024] wireguard_test_rhashtable: Lookups done, jiffies total = 154, duration msec = 154, ktime total = 151656378
+[Sat Oct 12 17:35:45 2024] wireguard_test_rhashtable: Step: pre-seed with 1500 peers, manipulate with 100 peers, 10000 iterations
+[Sat Oct 12 17:35:45 2024] wireguard_test_rhashtable: Starting insert/delete
+[Sat Oct 12 17:35:46 2024] wireguard_test_rhashtable: Insert/delete done, jiffies total = 521, duration msec = 521, ktime_diff = 582155754
+[Sat Oct 12 17:35:47 2024] wireguard_test_rhashtable: Replacements done, jiffies total = 159, duration msec = 159, ktime total = 161743455
+[Sat Oct 12 17:35:47 2024] wireguard_test_rhashtable: Lookups done, jiffies total = 141, duration msec = 141, ktime total = 147667108
+[Sat Oct 12 17:35:47 2024] wireguard_test_rhashtable: Step: pre-seed with 2000 peers, manipulate with 100 peers, 10000 iterations
+[Sat Oct 12 17:35:47 2024] wireguard_test_rhashtable: Starting insert/delete
+[Sat Oct 12 17:35:48 2024] wireguard_test_rhashtable: Insert/delete done, jiffies total = 547, duration msec = 547, ktime_diff = 540432529
+[Sat Oct 12 17:35:48 2024] wireguard_test_rhashtable: Replacements done, jiffies total = 156, duration msec = 156, ktime total = 160461184
+[Sat Oct 12 17:35:49 2024] wireguard_test_rhashtable: Lookups done, jiffies total = 148, duration msec = 148, ktime total = 149026577
+[Sat Oct 12 17:35:49 2024] wireguard_test_rhashtable: Step: pre-seed with 2500 peers, manipulate with 100 peers, 10000 iterations
+[Sat Oct 12 17:35:49 2024] wireguard_test_rhashtable: Starting insert/delete
+[Sat Oct 12 17:35:50 2024] wireguard_test_rhashtable: Insert/delete done, jiffies total = 830, duration msec = 830, ktime_diff = 811045210
+[Sat Oct 12 17:35:50 2024] wireguard_test_rhashtable: Replacements done, jiffies total = 162, duration msec = 162, ktime total = 160352813
+[Sat Oct 12 17:35:51 2024] wireguard_test_rhashtable: Lookups done, jiffies total = 152, duration msec = 152, ktime total = 149284811
+[Sat Oct 12 17:35:51 2024] wireguard_test_rhashtable: Step: pre-seed with 3000 peers, manipulate with 100 peers, 10000 iterations
+[Sat Oct 12 17:35:51 2024] wireguard_test_rhashtable: Starting insert/delete
+[Sat Oct 12 17:35:51 2024] wireguard_test_rhashtable: Insert/delete done, jiffies total = 571, duration msec = 571, ktime_diff = 572380082
+[Sat Oct 12 17:35:52 2024] wireguard_test_rhashtable: Replacements done, jiffies total = 172, duration msec = 172, ktime total = 161922446
+[Sat Oct 12 17:35:53 2024] wireguard_test_rhashtable: Lookups done, jiffies total = 143, duration msec = 143, ktime total = 154012042
+[Sat Oct 12 17:35:53 2024] wireguard_test_rhashtable: Step: pre-seed with 3500 peers, manipulate with 100 peers, 10000 iterations
+[Sat Oct 12 17:35:53 2024] wireguard_test_rhashtable: Starting insert/delete
+[Sat Oct 12 17:35:53 2024] wireguard_test_rhashtable: Insert/delete done, jiffies total = 536, duration msec = 536, ktime_diff = 553386611
+[Sat Oct 12 17:35:54 2024] wireguard_test_rhashtable: Replacements done, jiffies total = 165, duration msec = 165, ktime total = 166228977
+[Sat Oct 12 17:35:54 2024] wireguard_test_rhashtable: Lookups done, jiffies total = 160, duration msec = 160, ktime total = 151495661
+[Sat Oct 12 17:35:54 2024] wireguard_test_rhashtable: Step: pre-seed with 4000 peers, manipulate with 100 peers, 10000 iterations
+[Sat Oct 12 17:35:54 2024] wireguard_test_rhashtable: Starting insert/delete
+[Sat Oct 12 17:35:55 2024] wireguard_test_rhashtable: Insert/delete done, jiffies total = 773, duration msec = 773, ktime_diff = 772108245
+[Sat Oct 12 17:35:56 2024] wireguard_test_rhashtable: Replacements done, jiffies total = 169, duration msec = 169, ktime total = 160408685
+[Sat Oct 12 17:35:56 2024] wireguard_test_rhashtable: Lookups done, jiffies total = 141, duration msec = 141, ktime total = 150683216
+[Sat Oct 12 17:35:56 2024] wireguard_test_rhashtable: Step: pre-seed with 4500 peers, manipulate with 100 peers, 10000 iterations
+[Sat Oct 12 17:35:56 2024] wireguard_test_rhashtable: Starting insert/delete
+[Sat Oct 12 17:35:57 2024] wireguard_test_rhashtable: Insert/delete done, jiffies total = 517, duration msec = 517, ktime_diff = 559608229
+[Sat Oct 12 17:35:58 2024] wireguard_test_rhashtable: Replacements done, jiffies total = 135, duration msec = 135, ktime total = 165152976
+[Sat Oct 12 17:35:58 2024] wireguard_test_rhashtable: Lookups done, jiffies total = 130, duration msec = 130, ktime total = 153778608
+[Sat Oct 12 17:35:58 2024] wireguard_test_rhashtable: Step: pre-seed with 5000 peers, manipulate with 100 peers, 10000 iterations
+[Sat Oct 12 17:35:58 2024] wireguard_test_rhashtable: Starting insert/delete
+[Sat Oct 12 17:35:59 2024] wireguard_test_rhashtable: Insert/delete done, jiffies total = 507, duration msec = 507, ktime_diff = 566234230
+[Sat Oct 12 17:36:00 2024] wireguard_test_rhashtable: Replacements done, jiffies total = 134, duration msec = 134, ktime total = 165187171
+[Sat Oct 12 17:36:00 2024] wireguard_test_rhashtable: Lookups done, jiffies total = 148, duration msec = 148, ktime total = 156129521
+[Sat Oct 12 17:36:00 2024] wireguard_test_rhashtable: Step: pre-seed with 5500 peers, manipulate with 100 peers, 10000 iterations
+[Sat Oct 12 17:36:00 2024] wireguard_test_rhashtable: Starting insert/delete
+[Sat Oct 12 17:36:01 2024] wireguard_test_rhashtable: Insert/delete done, jiffies total = 538, duration msec = 538, ktime_diff = 576151542
+[Sat Oct 12 17:36:01 2024] wireguard_test_rhashtable: Replacements done, jiffies total = 133, duration msec = 133, ktime total = 165323947
+[Sat Oct 12 17:36:02 2024] wireguard_test_rhashtable: Lookups done, jiffies total = 134, duration msec = 134, ktime total = 153218409
+[Sat Oct 12 17:36:02 2024] wireguard_test_rhashtable: Step: pre-seed with 6000 peers, manipulate with 100 peers, 10000 iterations
+[Sat Oct 12 17:36:02 2024] wireguard_test_rhashtable: Starting insert/delete
+[Sat Oct 12 17:36:02 2024] wireguard_test_rhashtable: Insert/delete done, jiffies total = 519, duration msec = 519, ktime_diff = 580747864
+[Sat Oct 12 17:36:03 2024] wireguard_test_rhashtable: Replacements done, jiffies total = 132, duration msec = 132, ktime total = 161304221
+[Sat Oct 12 17:36:03 2024] wireguard_test_rhashtable: Lookups done, jiffies total = 131, duration msec = 131, ktime total = 146222289
+[Sat Oct 12 17:36:03 2024] wireguard_test_rhashtable: Step: pre-seed with 6500 peers, manipulate with 100 peers, 10000 iterations
+[Sat Oct 12 17:36:03 2024] wireguard_test_rhashtable: Starting insert/delete
+[Sat Oct 12 17:36:04 2024] wireguard_test_rhashtable: Insert/delete done, jiffies total = 804, duration msec = 804, ktime_diff = 797095940
+[Sat Oct 12 17:36:05 2024] wireguard_test_rhashtable: Replacements done, jiffies total = 162, duration msec = 162, ktime total = 159300649
+[Sat Oct 12 17:36:05 2024] wireguard_test_rhashtable: Lookups done, jiffies total = 155, duration msec = 155, ktime total = 148267228
+[Sat Oct 12 17:36:05 2024] wireguard_test_rhashtable: Step: pre-seed with 7000 peers, manipulate with 100 peers, 10000 iterations
+[Sat Oct 12 17:36:05 2024] wireguard_test_rhashtable: Starting insert/delete
+[Sat Oct 12 17:36:06 2024] wireguard_test_rhashtable: Insert/delete done, jiffies total = 553, duration msec = 553, ktime_diff = 543229938
+[Sat Oct 12 17:36:07 2024] wireguard_test_rhashtable: Replacements done, jiffies total = 172, duration msec = 172, ktime total = 161116015
+[Sat Oct 12 17:36:07 2024] wireguard_test_rhashtable: Lookups done, jiffies total = 149, duration msec = 149, ktime total = 153295536
+[Sat Oct 12 17:36:07 2024] wireguard_test_rhashtable: Step: pre-seed with 7500 peers, manipulate with 100 peers, 10000 iterations
+[Sat Oct 12 17:36:07 2024] wireguard_test_rhashtable: Starting insert/delete
+[Sat Oct 12 17:36:08 2024] wireguard_test_rhashtable: Insert/delete done, jiffies total = 530, duration msec = 530, ktime_diff = 560764062
+[Sat Oct 12 17:36:09 2024] wireguard_test_rhashtable: Replacements done, jiffies total = 130, duration msec = 130, ktime total = 165496933
+[Sat Oct 12 17:36:09 2024] wireguard_test_rhashtable: Lookups done, jiffies total = 136, duration msec = 136, ktime total = 153792999
+[Sat Oct 12 17:36:09 2024] wireguard_test_rhashtable: Step: pre-seed with 8000 peers, manipulate with 100 peers, 10000 iterations
+[Sat Oct 12 17:36:09 2024] wireguard_test_rhashtable: Starting insert/delete
+[Sat Oct 12 17:36:10 2024] wireguard_test_rhashtable: Insert/delete done, jiffies total = 495, duration msec = 495, ktime_diff = 557334575
+[Sat Oct 12 17:36:10 2024] wireguard_test_rhashtable: Replacements done, jiffies total = 153, duration msec = 153, ktime total = 163791767
+[Sat Oct 12 17:36:11 2024] wireguard_test_rhashtable: Lookups done, jiffies total = 135, duration msec = 135, ktime total = 153623772

@@ -1,0 +1,257 @@
+RHASHTABLES:
+Linux ldd 6.12.0-rc2wireguard-rhashtables-ge754eb05fbcd #5 SMP PREEMPT_DYNAMIC Sat Oct 12 17:30:37 CEST 2024 x86_64
+
+
+1 Peer:
+wg show wg10000 endpoints | grep -v '(none)' | wc -l
+1
+
+
+root@vyos1:/home/vyos# iperf3 -c 10.8.0.1 
+Connecting to host 10.8.0.1, port 5201
+[  5] local 10.8.0.202 port 46876 connected to 10.8.0.1 port 5201
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  69.1 MBytes   579 Mbits/sec    0    550 KBytes       
+[  5]   1.00-2.00   sec  69.0 MBytes   579 Mbits/sec    0    473 KBytes       
+[  5]   2.00-3.00   sec  66.4 MBytes   557 Mbits/sec    0    566 KBytes       
+[  5]   3.00-4.00   sec  68.8 MBytes   577 Mbits/sec    0    494 KBytes       
+[  5]   4.00-5.00   sec  68.1 MBytes   571 Mbits/sec    0    484 KBytes       
+[  5]   5.00-6.00   sec  66.8 MBytes   560 Mbits/sec    0    529 KBytes       
+[  5]   6.00-7.00   sec  69.6 MBytes   583 Mbits/sec    0    516 KBytes       
+[  5]   7.00-8.00   sec  65.3 MBytes   547 Mbits/sec    0    497 KBytes       
+[  5]   8.00-9.00   sec  65.4 MBytes   549 Mbits/sec    0    484 KBytes       
+[  5]   9.00-10.00  sec  67.4 MBytes   565 Mbits/sec    0   5.34 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec   676 MBytes   567 Mbits/sec    0             sender
+[  5]   0.00-10.00  sec   672 MBytes   564 Mbits/sec                  receiver
+
+iperf Done.
+
+
+10 Peers:
+wg show wg10000 endpoints | grep -v '(none)' | wc -l
+10
+
+root@vyos1:/home/vyos# iperf3 -c 10.8.0.1 
+Connecting to host 10.8.0.1, port 5201
+[  5] local 10.8.0.202 port 47562 connected to 10.8.0.1 port 5201
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  70.6 MBytes   591 Mbits/sec    0    588 KBytes       
+[  5]   1.00-2.00   sec  70.6 MBytes   593 Mbits/sec    0    526 KBytes       
+[  5]   2.00-3.00   sec  67.8 MBytes   569 Mbits/sec    0    444 KBytes       
+[  5]   3.00-4.00   sec  69.6 MBytes   584 Mbits/sec    0    387 KBytes       
+[  5]   4.00-5.00   sec  67.8 MBytes   569 Mbits/sec    0    468 KBytes       
+[  5]   5.00-6.00   sec  63.6 MBytes   534 Mbits/sec    0    505 KBytes       
+[  5]   6.00-7.00   sec  64.9 MBytes   544 Mbits/sec    0    521 KBytes       
+[  5]   7.00-8.00   sec  63.1 MBytes   530 Mbits/sec    0    494 KBytes       
+[  5]   8.00-9.00   sec  57.9 MBytes   485 Mbits/sec    0    518 KBytes       
+[  5]   9.00-10.00  sec  65.1 MBytes   546 Mbits/sec    0   5.34 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec   661 MBytes   554 Mbits/sec    0             sender
+[  5]   0.00-10.00  sec   658 MBytes   552 Mbits/sec                  receiver
+
+iperf Done.
+
+50 Peers:
+wg show wg10000 endpoints | grep -v '(none)' | wc -l
+50
+root@vyos1:/home/vyos# iperf3 -c 10.8.0.1 
+Connecting to host 10.8.0.1, port 5201
+[  5] local 10.8.0.202 port 37010 connected to 10.8.0.1 port 5201
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  65.8 MBytes   552 Mbits/sec    0    526 KBytes       
+[  5]   1.00-2.00   sec  70.2 MBytes   589 Mbits/sec    0    580 KBytes       
+[  5]   2.00-3.00   sec  62.5 MBytes   524 Mbits/sec    0    516 KBytes       
+[  5]   3.00-4.00   sec  65.0 MBytes   545 Mbits/sec    0    465 KBytes       
+[  5]   4.00-5.00   sec  63.8 MBytes   535 Mbits/sec    0    590 KBytes       
+[  5]   5.00-6.00   sec  65.0 MBytes   545 Mbits/sec    0    582 KBytes       
+[  5]   6.00-7.00   sec  68.8 MBytes   577 Mbits/sec    0    593 KBytes       
+[  5]   7.00-8.00   sec  62.5 MBytes   523 Mbits/sec    0    556 KBytes       
+[  5]   8.00-9.00   sec  63.8 MBytes   536 Mbits/sec    0    574 KBytes       
+[  5]   9.00-10.00  sec  67.5 MBytes   565 Mbits/sec    0    649 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec   655 MBytes   549 Mbits/sec    0             sender
+[  5]   0.00-10.01  sec   652 MBytes   546 Mbits/sec                  receiver
+
+iperf Done.
+
+100 Peers:
+wg show wg10000 endpoints | grep -v '(none)' | wc -l
+100
+
+root@vyos1:/home/vyos# iperf3 -c 10.8.0.1 
+Connecting to host 10.8.0.1, port 5201
+[  5] local 10.8.0.202 port 51576 connected to 10.8.0.1 port 5201
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  67.6 MBytes   567 Mbits/sec    0    502 KBytes       
+[  5]   1.00-2.00   sec  67.3 MBytes   564 Mbits/sec    0    585 KBytes       
+[  5]   2.00-3.00   sec  66.3 MBytes   556 Mbits/sec    0    588 KBytes       
+[  5]   3.00-4.00   sec  68.6 MBytes   576 Mbits/sec    0    601 KBytes       
+[  5]   4.00-5.00   sec  66.0 MBytes   554 Mbits/sec    0    510 KBytes       
+[  5]   5.00-6.00   sec  65.4 MBytes   548 Mbits/sec    0    492 KBytes       
+[  5]   6.00-7.00   sec  67.9 MBytes   571 Mbits/sec    0    470 KBytes       
+[  5]   7.00-8.00   sec  66.8 MBytes   560 Mbits/sec    0    433 KBytes       
+[  5]   8.00-9.00   sec  63.7 MBytes   535 Mbits/sec    0    540 KBytes       
+[  5]   9.00-10.00  sec  68.4 MBytes   574 Mbits/sec    0    497 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec   668 MBytes   560 Mbits/sec    0             sender
+[  5]   0.00-10.01  sec   665 MBytes   558 Mbits/sec                  receiver
+
+iperf Done.
+
+200 Peers:
+wg show wg10000 endpoints | grep -v '(none)' | wc -l
+200
+
+root@vyos1:/home/vyos# iperf3 -c 10.8.0.1 
+Connecting to host 10.8.0.1, port 5201
+[  5] local 10.8.0.202 port 48508 connected to 10.8.0.1 port 5201
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  64.3 MBytes   539 Mbits/sec    0    617 KBytes       
+[  5]   1.00-2.00   sec  66.3 MBytes   556 Mbits/sec    0    604 KBytes       
+[  5]   2.00-3.00   sec  68.8 MBytes   578 Mbits/sec    0    444 KBytes       
+[  5]   3.00-4.00   sec  66.5 MBytes   557 Mbits/sec    0    489 KBytes       
+[  5]   4.00-5.00   sec  65.4 MBytes   549 Mbits/sec    0    476 KBytes       
+[  5]   5.00-6.00   sec  70.3 MBytes   590 Mbits/sec    0    548 KBytes       
+[  5]   6.00-7.00   sec  68.9 MBytes   578 Mbits/sec    0    545 KBytes       
+[  5]   7.00-8.00   sec  65.6 MBytes   550 Mbits/sec    0    644 KBytes       
+[  5]   8.00-9.00   sec  66.5 MBytes   558 Mbits/sec    0    542 KBytes       
+[  5]   9.00-10.00  sec  67.6 MBytes   567 Mbits/sec    0   5.34 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec   670 MBytes   562 Mbits/sec    0             sender
+[  5]   0.00-10.00  sec   668 MBytes   560 Mbits/sec                  receiver
+
+iperf Done.
+
+HASHTABLES:
+Linux ldd 6.12.0-rc2wireguard-hashtables-00292-g1aa5d7972d6f #6 SMP PREEMPT_DYNAMIC Sat Oct 12 17:51:28 CEST 2024 x86_64 GNU/Linux
+
+1 Peer:
+wg show wg10000 endpoints | grep -v '(none)' | wc -l
+1
+
+root@vyos1:/home/vyos# iperf3 -c 10.8.0.1 
+Connecting to host 10.8.0.1, port 5201
+[  5] local 10.8.0.202 port 42104 connected to 10.8.0.1 port 5201
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  69.7 MBytes   584 Mbits/sec    0    598 KBytes       
+[  5]   1.00-2.00   sec  65.5 MBytes   550 Mbits/sec    0    494 KBytes       
+[  5]   2.00-3.00   sec  69.5 MBytes   583 Mbits/sec    0    566 KBytes       
+[  5]   3.00-4.00   sec  68.9 MBytes   577 Mbits/sec    0    580 KBytes       
+[  5]   4.00-5.00   sec  63.3 MBytes   530 Mbits/sec    0    510 KBytes       
+[  5]   5.00-6.00   sec  63.2 MBytes   532 Mbits/sec    0    513 KBytes       
+[  5]   6.00-7.00   sec  72.0 MBytes   604 Mbits/sec    0    537 KBytes       
+[  5]   7.00-8.00   sec  67.9 MBytes   570 Mbits/sec    0    516 KBytes       
+[  5]   8.00-9.00   sec  67.2 MBytes   564 Mbits/sec    0    521 KBytes       
+[  5]   9.00-10.00  sec  67.9 MBytes   570 Mbits/sec    0   5.34 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec   675 MBytes   566 Mbits/sec    0             sender
+[  5]   0.00-10.00  sec   673 MBytes   564 Mbits/sec                  receiver
+
+iperf Done.
+
+10 Peers:
+wg show wg10000 endpoints | grep -v '(none)' | wc -l
+10
+
+root@vyos1:/home/vyos# iperf3 -c 10.8.0.1 
+Connecting to host 10.8.0.1, port 5201
+[  5] local 10.8.0.202 port 41464 connected to 10.8.0.1 port 5201
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  67.0 MBytes   562 Mbits/sec    0    572 KBytes       
+[  5]   1.00-2.00   sec  64.5 MBytes   541 Mbits/sec    0    660 KBytes       
+[  5]   2.00-3.00   sec  68.4 MBytes   573 Mbits/sec    0    564 KBytes       
+[  5]   3.00-4.00   sec  71.5 MBytes   600 Mbits/sec    0    617 KBytes       
+[  5]   4.00-5.00   sec  66.9 MBytes   561 Mbits/sec    0    558 KBytes       
+[  5]   5.00-6.00   sec  66.8 MBytes   560 Mbits/sec    0    598 KBytes       
+[  5]   6.00-7.00   sec  65.6 MBytes   550 Mbits/sec    0    665 KBytes       
+[  5]   7.00-8.00   sec  67.4 MBytes   567 Mbits/sec    0    438 KBytes       
+[  5]   8.00-9.00   sec  62.4 MBytes   524 Mbits/sec    0    521 KBytes       
+[  5]   9.00-10.00  sec  69.1 MBytes   580 Mbits/sec    0    623 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec   670 MBytes   562 Mbits/sec    0             sender
+[  5]   0.00-10.01  sec   667 MBytes   559 Mbits/sec                  receiver
+
+iperf Done.
+
+50 Peers:
+wg show wg10000 endpoints | grep -v '(none)' | wc -l
+50
+
+root@vyos1:/home/vyos# iperf3 -c 10.8.0.1 
+Connecting to host 10.8.0.1, port 5201
+[  5] local 10.8.0.202 port 34212 connected to 10.8.0.1 port 5201
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  66.8 MBytes   560 Mbits/sec    0    460 KBytes       
+[  5]   1.00-2.00   sec  68.3 MBytes   573 Mbits/sec    0    532 KBytes       
+[  5]   2.00-3.00   sec  66.9 MBytes   561 Mbits/sec    0    510 KBytes       
+[  5]   3.00-4.00   sec  65.0 MBytes   545 Mbits/sec    0    607 KBytes       
+[  5]   4.00-5.00   sec  68.1 MBytes   572 Mbits/sec    0    604 KBytes       
+[  5]   5.00-6.00   sec  69.7 MBytes   583 Mbits/sec    0    529 KBytes       
+[  5]   6.00-7.00   sec  66.4 MBytes   558 Mbits/sec    0    532 KBytes       
+[  5]   7.00-8.00   sec  65.5 MBytes   549 Mbits/sec    0    544 KBytes       
+[  5]   8.00-9.00   sec  63.1 MBytes   530 Mbits/sec    0    521 KBytes       
+[  5]   9.00-10.00  sec  62.0 MBytes   520 Mbits/sec    0   5.34 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec   662 MBytes   555 Mbits/sec    0             sender
+[  5]   0.00-10.00  sec   659 MBytes   553 Mbits/sec                  receiver
+
+iperf Done.
+
+100 Peers:
+wg show wg10000 endpoints | grep -v '(none)' | wc -l
+100
+
+root@vyos1:/home/vyos# iperf3 -c 10.8.0.1 
+Connecting to host 10.8.0.1, port 5201
+[  5] local 10.8.0.202 port 58468 connected to 10.8.0.1 port 5201
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  67.8 MBytes   568 Mbits/sec    0    484 KBytes       
+[  5]   1.00-2.00   sec  64.5 MBytes   541 Mbits/sec    0    510 KBytes       
+[  5]   2.00-3.00   sec  65.7 MBytes   552 Mbits/sec    0    478 KBytes       
+[  5]   3.00-4.00   sec  65.1 MBytes   546 Mbits/sec    0    561 KBytes       
+[  5]   4.00-5.00   sec  64.3 MBytes   540 Mbits/sec    0    478 KBytes       
+[  5]   5.00-6.00   sec  66.5 MBytes   558 Mbits/sec    0    484 KBytes       
+[  5]   6.00-7.00   sec  67.7 MBytes   568 Mbits/sec    0    609 KBytes       
+[  5]   7.00-8.00   sec  63.6 MBytes   534 Mbits/sec    0    516 KBytes       
+[  5]   8.00-9.00   sec  69.3 MBytes   582 Mbits/sec    0    550 KBytes       
+[  5]   9.00-10.00  sec  65.0 MBytes   545 Mbits/sec    0    529 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec   660 MBytes   553 Mbits/sec    0             sender
+[  5]   0.00-10.00  sec   657 MBytes   551 Mbits/sec                  receiver
+
+iperf Done.
+
+200 Peers:
+wg show wg10000 endpoints | grep -v '(none)' | wc -l
+200
+
+root@vyos1:/home/vyos# iperf3 -c 10.8.0.1 
+Connecting to host 10.8.0.1, port 5201
+[  5] local 10.8.0.202 port 51570 connected to 10.8.0.1 port 5201
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  66.2 MBytes   555 Mbits/sec    0    454 KBytes       
+[  5]   1.00-2.00   sec  64.4 MBytes   540 Mbits/sec    0    561 KBytes       
+[  5]   2.00-3.00   sec  61.9 MBytes   518 Mbits/sec    0    518 KBytes       
+[  5]   3.00-4.00   sec  63.2 MBytes   531 Mbits/sec    0    492 KBytes       
+[  5]   4.00-5.00   sec  67.0 MBytes   562 Mbits/sec    0    454 KBytes       
+[  5]   5.00-6.00   sec  67.9 MBytes   569 Mbits/sec    0    529 KBytes       
+[  5]   6.00-7.00   sec  67.7 MBytes   567 Mbits/sec    0    500 KBytes       
+[  5]   7.00-8.00   sec  66.9 MBytes   562 Mbits/sec    0    558 KBytes       
+[  5]   8.00-9.00   sec  64.5 MBytes   541 Mbits/sec    0    556 KBytes       
+[  5]   9.00-10.00  sec  66.7 MBytes   560 Mbits/sec    0   5.34 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec   656 MBytes   551 Mbits/sec    0             sender
+[  5]   0.00-10.00  sec   654 MBytes   548 Mbits/sec                  receiver
+
+iperf Done.
